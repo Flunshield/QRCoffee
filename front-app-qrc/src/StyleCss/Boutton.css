@@ -1,0 +1,22 @@
+.button-container button {
+    font-weight: bold;
+    background-color: #CDD1DE;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.button-container button:hover {
+    background-color: #007bff;
+}
+
+.button-container-tab {
+    border-radius: 10px 10px 0px 0px !important;
+    margin-right: 5px;
+    position: relative;
+    background-color: #413620 !important;
+    color: white !important;
+}

@@ -1,0 +1,63 @@
+/* Base styles for your header bar */
+.appBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #413620;
+}
+
+.Composant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2vw;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 8vh;
+    width: auto;
+    max-width: 100px;
+    margin-right: 2vw;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Btn {
+    font-weight: bold;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 1vw;
+    height: auto;
+}
+
+.Btn:hover {
+    opacity: 0.8;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    /* Adjustments for smaller screens (e.g., mobile devices) */
+    .Composant {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 1rem 2vw; /* Adjust padding as needed */
+    }
+
+    .list {
+        margin: 0.5rem 0; /* Add space vertically between list items */
+    }
+
+
+}

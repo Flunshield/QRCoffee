@@ -1,0 +1,57 @@
+Partie 1 : Le cahier des charges
+==> Présentation de l'équipe
+	==> Création de l'entreprise fictive => 1 diapo : Kevin 					✅
+	==> Distribution des roles => 1 diapo / personne : Kevin / Julien / Grégoire			✅
+==> Présentation du projet
+	==> Origine du projet => 1 diapo : Grégoire							✅
+	==> Expression du besoin => 1 diapo : Grégoire							✅
+==> Charte graphique
+	==> Nos couleurs => 1 diapo : Grégoire								✅
+	==> Notre logo => 1 diapo : Grégoire								✅
+==> Contrainte du projet
+	==> Etude des contraintes => 1 diapo par contrainte : Kevin					✅
+==> Périmètre du projet
+	==> Etude des moyens et des ressources => 1 diapo pour 3 contrainte/ressource : Julien		✅
+==> Etude de marché
+	==> Analyse SWOT => 1 diapo : Julien								✅
+	==> Analyse Macro et micro Economique => 1 diapo : Grégoire					✅
+	==> Enveloppe Budgétaire => 1 diapo : Kévin							✅
+==> La stack technique => 1 diapo par éléments : Grégoire / Kévin / Julien				✅✅✅
+==> MCD => 1 Diapo : Kévin										✅
+
+Partie 2 : La réalisation du projet
+==> Présentation des outils
+<<<<<<< Updated upstream
+	==> Project => 1 Diapo : Julien									✅
+	==> Atlassian											
+		==> Jira : Grégoire									✅
+		==> Bitbucket/Git => 1 Diapo : Kevin							✅
+==> Méthodologie de gestion de projet
+	==> Cascade => 1 diapo : Julien									✅
+	==> Kaban => 1 diapo : Grégoire									✅
+==> Architecture de l'application
+	==> Front => 1 diapo : Kevin									✅
+	==> Back => 1 à 2 diapo : Julien								✅
+==> Tests d'intégration : 2 diapo : Julien								✅
+	==> Front											✅
+	==> Back											✅
+==> Mise en place de l'hébergement
+	==> Front ==> 1 diapo : Julien									✅
+	==> Back ==> 1 diapo : Julien									✅
+	==> Authentification ==> 1 diapo : Grégoire							✅
+
+Partie 3: Présentation technique									
+==> Présentation de l'accueil 
+==> Présentation du Login
+==> Présentation de l'espace Mon compte
+==> Présentation création de QRcode / Vcard / Location
+==> Présentation Espace Qrcode
+
+Partie 4 : Evolution de l'application 
+==> Court terme ==> 1 Diapo : Grégoire									✅
+==> Moyen terme ==> 1 Diapo : Kévin									✅
+==> Long terme ==> 1 Diapo : Julien									✅
+
+
+
+

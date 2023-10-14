@@ -1,0 +1,22 @@
+import { } from 'cypress';
+export const login = (email: string, password: string) => {
+    cy.wait(2000);
+    cy.title().should('include', 'QRCoffee - Le Générateur qui vous fais même le café !');
+    cy.wait(500);
+    cy.get('header').contains('Accueil').should('be.visible');
+    cy.wait(500);
+    cy.get('header').contains('Créer un QRCODE').should('be.visible');
+    cy.wait(500);
+    cy.get('header').contains('Connexion').should('be.visible');
+    cy.wait(500);
+    cy.contains('Connexion').click();
+    cy.wait(2000);
+    cy.get('#identifier-field').type(email);
+    cy.wait(500);
+    cy.contains('Continue').click();
+    cy.wait(500);
+    cy.get('#password-field').type(password);
+    cy.wait(500);
+    cy.contains('Continue').click();
+    cy.wait(2000);
+};

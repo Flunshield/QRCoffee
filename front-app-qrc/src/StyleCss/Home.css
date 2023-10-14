@@ -1,0 +1,148 @@
+body {
+    background-color: #DFDFDF;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles pour la card */
+.card {
+    background-color: #FFD791;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les titres */
+.title h2, .title h1 {
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Style pour le titre principal */
+.title-text {
+    font-size: 2rem; /* Taille du texte en rem */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style pour le sous-titre */
+.subtitle {
+    font-size: 1rem; /* Taille du texte en rem */
+    color: #666666;
+}
+
+/* Style pour la section titre */
+.section-title {
+    font-size: 1.6rem; /* Taille du texte en rem */
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style pour la description de section */
+.section-description {
+    font-size: 1rem; /* Taille du texte en rem */
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Style pour le conteneur des QR Codes */
+.qr-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Met les QR codes en colonnes avec largeur minimale de 200px */
+    grid-gap: 20px; /* Espacement entre les QR codes */
+    justify-items: center;
+}
+
+/* Animation de zoom sur hover des QR Codes */
+.qr-container div:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styles pour la card du profil utilisateur */
+.user-card {
+    background-color: #FFD791;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style pour le bouton "Créé votre Qrcode" */
+.create-button {
+    text-align: center;
+}
+
+.create-button button {
+    padding: 2rem 4rem; /* Taille du padding en rem */
+    background-color: #4285F4;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem; /* Taille du texte en rem */
+}
+
+.create-button button:hover {
+    background-color: #3367D6;
+}
+
+/* Animation de fading sur hover du bouton "Créé votre Qrcode" */
+.create-button button:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Animation de fading sur hover des titres */
+.title h1:hover, .title h2:hover, .section-title:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Médias queries pour rendre le header responsive */
+.appBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh; /* 10% de la hauteur de la fenêtre d'affichage */
+    background-color: #413620;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Composant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2vw; /* 2% de la largeur de la fenêtre d'affichage à gauche et à droite */
+    margin: 0 auto;
+}
+
+.logo {
+    height: 8vh; /* 8% de la hauteur de la fenêtre d'affichage */
+    width: auto; /* La largeur s'ajustera automatiquement en fonction de la hauteur */
+    max-width: 100px; /* Limite la largeur maximale à 100px pour éviter que le logo ne devienne trop grand */
+    margin-right: 2vw; /* 2% de la largeur de la fenêtre d'affichage à droite */
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Btn {
+    font-weight: bold;
+    color: #ffffff;
+    padding: 1rem 2rem; /* 1% de la hauteur de la fenêtre d'affichage en hauteur et 2% de la largeur de la fenêtre en largeur */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 1vw; /* 1% de la largeur de la fenêtre d'affichage à droite */
+    height: auto;
+}

@@ -1,0 +1,52 @@
+version: "3.7"
+
+services:
+
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${DB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+    volumes:
+      - ${MONGO_PATH}:/data/db
+    ports:
+      - ${MONGO_PORTS}:27017
+
+  app:
+    build:
+      context: ./app
+      dockerfile: deploy/app/Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./app:/app
+    environment:
+      - DB_ROOT_USERNAME=${DB_ROOT_USERNAME}
+      - DB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MONGO_PATH=${MONGO_PATH}
+      - MONGO_PORTS=${MONGO_PORTS}
+      - MONGO_HOST=${MONGO_HOST}
+      - ME_CONFIG_MONGODB_URL=${ME_CONFIG_MONGODB_URL}
+      - MONGO_DATABASE=${MONGO_DATABASE}
+      - MONGO_COLLECTION=${MONGO_COLLECTION}
+      - MONGO_COLLECTION_V=${MONGO_COLLECTION_V}
+      - MONGO_COLLECTION_L=${MONGO_COLLECTION_L}
+      - CLERK_SECRET_KEY=${CLERK_SECRET_KEY}
+      - CLERK_PUBLIC_KEY=${CLERK_PUBLIC_KEY}
+      - MAIL=${MAIL}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_TO=${MAIL_TO}
+      - ACCESS_TEST=${ACCESS_TEST}
+      - ROOT_OK1=${ROOT_OK1}
+      - ROOT_OK2=${ROOT_OK2}
+      - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
